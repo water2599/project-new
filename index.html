@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="OECD MENTAL HEALTH STATISTICS"/>
+    <meta name="author" content="Sara Tarannum, Hoang Vu Tran">
+    <title>Mental Health Statistics Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+</head>
+<body>
+    <h1>Mental Health Statistics</h1>
+    <div class="container">
+        <div class="chart_visualisation">
+            <h2>Suicide Rates By Country</h2>
+            <form id="form">
+                <p class="title">Countries:</p>
+                <div class="radio_inputs">
+                    <div class="country_inputs">
+                        <input type="radio" id="Australia" name="Country" value="Australia" checked>
+                        <label for="Australia">Australia</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="Canada" name="Country" value="Canada">
+                        <label for="Canada">Canada</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="Germany" name="Country" value="Germany">
+                        <label for="Germany">Germany</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="USA" name="Country" value="USA">
+                        <label for="USA">USA</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="France" name="Country" value="France">
+                        <label for="France">France</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="India" name="Country" value="India">
+                        <label for="India">India</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="Japan" name="Country" value="Japan">
+                        <label for="Japan">Japan</label>
+                    </div>
+                    <div class="country_inputs">
+                        <input type="radio" id="UK" name="Country" value="UK">
+                        <label for="UK">UK</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="getData">Display</button>
+                </div>
+            </form>
+            <p id="barchart"></p>
+            <p class="explanation"></p>
+            <script src="/scripts/bargraph.js"></script>
+        </div>
+        <div class="chart_explanation">
+            <p>Here is a bar chart that demonstrates the suicide rates in some of countries over the years. It shows the suicides per year measured in Deaths per 100k.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="chart_visualisation">
+            <h2>Global Depression Rates In 2019</h2>
+            <section id="infographic_2">
+                <div class="child_divs" id="Choropleth"></div>
+            </section>
+            <script src="/scripts/chloropeth.js"></script>
+        </div>
+        <div class="chart_explanation">
+            <p>This map demonstrates the depression rates in different parts of the world in 2019.</p>
+            <div class="child_divs" id="choropleth_detailed_info">
+                <h3 id="Country"></h3>
+                <p id="detailed_info"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+        <div id="linechart"></div>
+        <script src="/scripts/script.js"></script>
+        <select id="selectButton"></select>
+    </div>
+
+    <footer>
+        <p id="subject">Data Visualization Project</p>
+        <p>Sara Tarannum, Hoang Vu Tran</p>
+    </footer>
+</body>
+</html>

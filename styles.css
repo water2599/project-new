@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #333;
+}
+
+h2 {
+    font-size: 30px;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.chart_visualisation {
+    padding-right: 1.5rem;
+    border-right: dashed;
+}
+
+.chart_explanation {
+    padding-left: 1.5rem;
+    font-size: small;
+    font-family: Verdana, sans-serif;
+}
+
+.radio_inputs {
+    display: flex;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.country_inputs {
+    margin-right: 15px;
+}
+
+button {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 18px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+button:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+footer {
+    clear: both;
+    border-top: 4px inset darkblue;
+    border-top-style: double;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    font-family: Verdana, sans-serif;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#infographic_2 {
+    display: flex;
+    width: 100%;
+}
+
+#choropleth_detailed_info {
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#Country {
+    color: darkred;
+    font-size: 20px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-right: 35px;
+    padding-right: 55px;
+}
+
+#detailed_info {
+    margin-top: -40px;
+    padding-top: -40px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 30px;
+    color: #080808;
+    transition: all 0.4s ease 0s;
+}
+
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+}
+
+.node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
+
+.link:hover {
+    stroke-opacity: .5;
+}
